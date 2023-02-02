@@ -75,7 +75,9 @@ Nest is [MIT licensed](LICENSE).
 ## Steps run
 
 ```bash
+#create a docker
 $ sudo docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
-$ docker start postgress
+# subir docker
+$ docker start postgres
 ```
 

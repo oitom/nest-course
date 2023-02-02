@@ -28,8 +28,6 @@ export class CoursesController {
     
     @Patch(':id')
     update(@Param('id') id: string, @Body() updateCourseDto: UpdateCourseDto) { 
-        console.log(id);
-        console.log(updateCourseDto);
       return this.coursesService.update(id, updateCourseDto);
     }
 
