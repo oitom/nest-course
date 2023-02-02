@@ -2,7 +2,7 @@
 GET http://localhost:3000/courses
 
 ### GET ONE
-GET http://localhost:3000/courses/3
+GET http://localhost:3000/courses/2
 
 ### POST CREATE
 POST http://localhost:3000/courses
@@ -15,7 +15,7 @@ Content-Type: application/json
 }
 
 ### PATCH UPDATE
-PATCH  http://localhost:3000/courses/4
+PATCH  http://localhost:3000/courses/2
 Content-Type: application/json
 
 {
