@@ -81,3 +81,17 @@ $ sudo docker run --name postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d po
 $ docker start postgres
 ```
 
+
+### Note
+sql: FATAL: password authentication failed for user "postgres"
+
+```bash
+$ docker ps
+$ docker exec -it <hash> bash
+$ su postgres
+$ psql
+$  ALTER ROLE postgres WITH PASSWORD 'your_password';
+$ \q
+$  docker-compose down -v
+$  docker-compose up --remove-orphans --force-recreate --build PostgreSQL
+```
